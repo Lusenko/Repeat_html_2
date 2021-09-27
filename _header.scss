@@ -3,7 +3,9 @@
 .header{
   position: absolute;
   width: 100%;
-  z-index: 50;
+  left: 0;
+  top: 0;
+  z-index: 100;
 
   .container{
     max-width: 1046px;
@@ -15,36 +17,43 @@
   .header__container{
     display: flex;
     min-height: 104px;
+
     align-items: center;
 
     .header__logo{
-      font-family: Montserrat, sans-serif;
-      font-weight: bold;
       font-size: 24px;
-      color: #252B42;
+      font-weight: 700;
+
+      line-height: 32px;
+
+      color: $colorTitle;
     }
+
     .header__menu{
-      margin: 0 0 0 133px;
-      @media (max-width: 992px) {
+      margin: 0 0 0 132px;
+      @media (max-width: 1024px) {
         margin: 0 0 0 80px;
       }
-      @media (max-width: 767px){
-        margin: 0 0 0 40px;
+      @media (max-width: 768px) {
+        margin: 0 0 0 60px;
       }
+
       .menu__list{
         display: flex;
         flex-wrap: wrap;
         .menu__item{
           .menu__link{
-            color: #737373;
-            font-family: Montserrat, sans-serif;
-            font-weight: 600;
+
             font-size: 14px;
-            line-height: 24px;
+            font-weight: 600;
+
+            line-height: calc(24 / 14 * 100%);
+
+            color: $colorText;
           }
         }
         .menu__item:not(:last-child){
-          margin-right: 21px;
+          margin: 0 21px 0 0;
         }
       }
     }
