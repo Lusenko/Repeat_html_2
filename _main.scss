@@ -191,29 +191,118 @@
 .page__advantage{
   padding: 80px 0;
 }
+.header-title{
+  padding: 0 0 10px 0;
+}
 .advantage-page{
   display: flex;
-  margin: 50px 0 0 0;
-  justify-content: center;
+  margin: 0 -10px;
+
+  @media  (max-width: 1075px){
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .advantage-column{
-    display: flex;
-    flex: 0 1 25px;
+    flex: 0 1 25%;
 
     padding: 0 15px;
-    margin: 0 15px;
-    background: white;
 
-    text-align: center;
+    @media (max-width: 1075px){
+      flex: 0 1 33.333%;
+      padding: 15px;
+    }
+    @media (max-width: 728px){
+      flex: 0 1 100%;
+    }
+
     .advantage-item{
-      padding: 30px 40px;
+      padding: 30px;
+      text-align: center;
 
+      background: white;
+
+      & > *:not(:last-child){
+        margin: 0 0 10px 0;
+      }
       .advantage-text{
         font-size: 16px;
         font-weight: 700;
 
+        letter-spacing: .1px;
         line-height: calc(24 / 16 * 100%);
 
         color: $colorText;
+      }
+      .advantage-img{
+        height: 48px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+  }
+}
+/****************Practice*******************/
+.practice{
+  padding: 50px 0 50px 0;
+}
+.practice__header{
+  margin: 0 0 20px 0;
+}
+.practice__body{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+  .practice__columns{
+    padding: 0 15px;
+    flex: 0 1 25%;
+
+    @media (max-width: 1024px){
+      flex: 0 1 50%
+    }
+
+    @media (max-width: 610px){
+      flex: 0 1 100%;
+    }
+    .item-practice{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background: white;
+    }
+
+    .practice__item{
+      .practice__item-content{
+        flex: 1 1 auto;
+        padding: 30px;
+
+        .practice-title{
+          font-size: 16px;
+          font-weight: 700;
+
+          line-height: calc(24 / 16 * 100%);
+
+          color: $colorTitle;
+
+          &:not(:last-child){
+            padding: 0 0 15px 0;
+          }
+        }
+        .practice-text{
+          font-size: 14px;
+          font-weight: 500;
+
+          line-height: calc(20 / 14 * 100%);
+
+          color: $colorText;
+
+          letter-spacing: .2px;
+        }
+      }
+      .practice-img{
+        display: block;
+        padding: 0 0 67% 0;
       }
     }
   }
