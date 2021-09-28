@@ -332,6 +332,10 @@
     position: relative;
     padding: 0 0 42.25% 0;
 
+    @media (max-width: 868px){
+      padding: 0 0 56.25% 0;
+    }
+
     & iframe{
       position: absolute;
       width: 100%;
@@ -351,7 +355,8 @@
     @media (max-width: 1000px){
       padding: 0 0 0 50px;
     }
-    @media (max-width: 968px){
+
+    @media (max-width: 868px){
       padding: 40px 0 0 0;
     }
 
