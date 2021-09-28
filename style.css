@@ -542,4 +542,105 @@ ul, li {
   padding: 0 15px;
 }
 
+/*****************Subscribe******************/
+.subscribe {
+  position: relative;
+  padding: 20px 0;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 77px;
+  width: 100%;
+  background: #252B42;
+}
+
+.subscribe__body {
+  display: flex;
+  background: #17213C;
+  padding: 30px 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 839px) {
+  .subscribe__body {
+    flex-direction: column;
+  }
+}
+.subscribe__body .subscribe-title {
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 266px;
+  line-height: 133.3333333333%;
+  color: white;
+}
+@media (max-width: 839px) {
+  .subscribe__body .subscribe-title {
+    text-align: center;
+    padding: 0 0 15px 0;
+  }
+}
+@media (max-width: 470px) {
+  .subscribe__body .subscribe-title {
+    font-size: 22px;
+  }
+}
+.subscribe__body form {
+  display: flex;
+  align-items: center;
+}
+.subscribe__body form .subscribe-form__input {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 200%;
+  color: #737373;
+  padding: 15px 149px 15px 20px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+@media (max-width: 926px) {
+  .subscribe__body form .subscribe-form__input {
+    padding: 15px 100px 15px 20px;
+  }
+}
+@media (max-width: 868px) {
+  .subscribe__body form .subscribe-form__input {
+    padding: 15px 70px 15px 20px;
+  }
+}
+@media (max-width: 470px) {
+  .subscribe__body form .subscribe-form__input {
+    padding: 10px 40px 10px 15px;
+  }
+}
+@media (max-width: 376px) {
+  .subscribe__body form .subscribe-form__input {
+    padding: 10px 10px 10px 15px;
+  }
+}
+.subscribe__body form .subscribe-form__button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 200%;
+  color: white;
+  background: #FF7B47;
+  padding: 14px 21.5px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid white;
+}
+@media (max-width: 470px) {
+  .subscribe__body form .subscribe-form__button {
+    padding: 9px 16.5px;
+  }
+}
+@media (max-width: 376px) {
+  .subscribe__body form .subscribe-form__button {
+    padding: 9xp 12.5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
