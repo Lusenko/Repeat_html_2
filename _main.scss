@@ -310,6 +310,7 @@
 /**************Who We Are******************/
 .who-we-are{
   padding: 100px 0;
+  background: white;
 }
 .who-we-are__header{
   padding: 0 0 100px 0;
@@ -430,6 +431,25 @@
           color: $colorText;
         }
       }
+    }
+  }
+}
+/******************Client******************/
+.client__body{
+  .client__column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0 -15px;
+
+    justify-content: center;
+
+    .client__item{
+      text-align: center;
+      flex: 0 1 16.666%;
+
+      padding: 0 15px;
     }
   }
 }
