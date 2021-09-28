@@ -651,10 +651,12 @@ ul, li {
 .get-in-touch__body {
   padding: 80px 32.5px;
 }
-.get-in-touch__body .get-in-touch__column {
-  display: flex;
-  text-align: center;
-  align-items: center;
+@media (min-width: 1090px) {
+  .get-in-touch__body .get-in-touch__column {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
 }
 .get-in-touch__body .get-in-touch__column .get-in-touch__item {
   flex: 0 1 33.333%;
@@ -690,6 +692,11 @@ ul, li {
 .get-in-touch__body .get-in-touch__column .green-item {
   padding: 80px 40px;
   background: #252B42;
+}
+@media (max-width: 1090px) {
+  .get-in-touch__body .get-in-touch__column .green-item {
+    padding: 40px;
+  }
 }
 .get-in-touch__body .get-in-touch__column .green-item .get-in-touch__email a {
   color: white;

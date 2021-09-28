@@ -569,10 +569,12 @@
   padding: 80px 32.5px;
 
   .get-in-touch__column{
-    display: flex;
-    text-align: center;
-    align-items: center;
 
+    @media (min-width: 1090px){
+      display: flex;
+      text-align: center;
+      align-items: center;
+    }
 
     .get-in-touch__item{
       flex: 0 1 33.333%;
@@ -616,6 +618,10 @@
     .green-item{
       padding: 80px 40px;
       background: $colorTitle;
+
+      @media (max-width: 1090px){
+        padding: 40px;
+      }
 
       .get-in-touch__email{
         a{
