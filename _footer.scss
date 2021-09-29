@@ -9,8 +9,27 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 845px){
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
     .business-item{
       margin: 0 360px 0 0;
+
+      @media (max-width: 1105px){
+        margin: 0 300px 0 0;
+      }
+      @media (max-width: 1045px){
+        margin: 0 200px 0 0;
+      }
+      @media (max-width: 945px){
+        margin: 0 100px 0 0;
+      }
+      @media (max-width: 845px){
+        margin: 0 0 30px 0;
+        text-align: center;
+      }
 
       & > *:not(:last-child){
         margin: 0 0 10px 0;
@@ -61,9 +80,24 @@
 
   .link-body{
     padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
 
     .link-columns{
       display: flex;
+
+      flex: 0 1 18%;
+
+      @media (max-width: 960px){
+        flex: 0 1 33.333%;
+        margin: 0 0 60px 0;
+      }
+      @media(max-width: 640px){
+        flex: 0 1 50%;
+      }
+      @media(max-width: 376px){
+        flex: 0 1 100%;
+      }
 
       & > *:not(:last-child){
         margin: 0 30px 0 0;
@@ -72,7 +106,7 @@
       .link-item{
 
         & > *:not(:last-child){
-          margin: 0 0 20px 0;
+          padding: 0 0 30px 0;
         }
         .link-title{
           font-size: 16px;
@@ -101,6 +135,62 @@
             }
           }
         }
+        .info{
+          .link-data{
+            display: flex;
+
+            & > *:not(:last-child){
+              margin: 0 10px 0 0;
+            }
+
+            .data-text{
+              font-size: 14px;
+              font-weight: 600;
+
+              line-height: calc(24 / 14 * 100%);
+
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*********************************/
+.website-body{
+  .website-item{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 376px){
+      flex-direction: column;
+    }
+
+    .website-text{
+      flex: 0 1 50%;
+      font-size: 14px;
+      font-weight: 600;
+
+      line-height: calc(24 / 14 * 100%);
+
+      color: $colorText;
+
+      @media (max-width: 376px){
+        text-align: center;
+        padding: 0 0 30px 0;
+      }
+    }
+
+    .website-img{
+      display: flex;
+      flex: 0 1 23%;
+      justify-content: center;
+      align-items: center;
+
+      & > *:not(:last-child){
+        margin: 0 20px 0 0;
       }
     }
   }
